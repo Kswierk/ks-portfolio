@@ -1,7 +1,98 @@
-body {
-  background-color: red;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-p {
-  font-size: 50px;
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #E0E5E9;
+  height: 75px;
+}
+
+.navbar-links {
+  display: block;
+  list-style: none;
+  position: absolute;
+  top: 75px;
+  left: calc(-100vw - 40px);
+  width: 80vw;
+  transition: 0.5s;
+}
+
+.navbar-links ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #E0E5E9;
+}
+
+.navbar-links li {
+  display: block;
+  list-style: none;
+}
+
+.navbar-links a {
+  display: block;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 1.3em 1.3em 1.3em 2em;
+  color: #0A62D0;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+.navbar-links a:hover {
+  background-color: #0A62D0;
+  color: #E0E5E9;
+}
+
+.brand-title {
+  width: 200px;
+}
+.brand-title .nav-img {
+  position: relative;
+  top: 12px;
+  left: 20px;
+  width: 100%;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 36px;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 30px;
+  background-color: #0A62D0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  width: 100%;
+}
+
+.bar {
+  display: block;
+  height: 4px;
+  background-color: #E0E5E9;
+  border-radius: 10px;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  top: 75px;
+  left: -40px;
+  transition: 0.5s;
 }
