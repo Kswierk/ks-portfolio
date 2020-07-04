@@ -1,0 +1,55 @@
+// .front-wrap {
+//     height: calc(100% - 75px);
+// }
+
+.front-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.front-txt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 30vh;
+    color: $lightgray;
+
+    h1 {
+        padding: .4em;
+        font-size: 2em;
+    }
+
+    h3 {
+        padding: 1em;
+        font-size: 1.4em;
+    }
+
+    button {
+        width: 50%;
+        padding: .8em;
+        margin-top: 2em;
+        align-self: center;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        color: $lightgray;
+        background-color: $blue;
+        opacity: .9;
+        cursor: pointer;
+        transition: .3s;
+        text-transform: uppercase;
+
+        &:hover {
+            opacity: 1;
+            width: 55%
+        }
+    }
+}

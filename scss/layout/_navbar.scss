@@ -21,6 +21,7 @@
     flex-direction: column;
     justify-content: space-around;
     background-color: $lightgray;
+    z-index: 1;
 }
 
 .navbar-links li {
@@ -66,6 +67,8 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.toggle-animation {}
 
 .bars {
     display: flex;
