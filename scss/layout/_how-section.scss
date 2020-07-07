@@ -1,0 +1,26 @@
+.how-flex {
+    position: absolute;
+}
+
+.gallery-wraper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: $lightgray;
+    width: 100%;
+    height: 45vh;
+    margin-top: 3em;
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+}
+
+.how-header {
+    font-size: 2em;
+    margin-bottom: 1em;
+}

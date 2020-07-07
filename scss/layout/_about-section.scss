@@ -1,0 +1,31 @@
+.about-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+
+    .about-h1 {
+        border-bottom: 2px solid $blue;
+        padding: .3em;
+    }
+
+    .about-p {
+        padding: 1em;
+        width: 100%;
+    }
+}
+
+.about-img-wrap {
+    display: block;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    margin: 4em;
+
+    .about-face-img {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+}

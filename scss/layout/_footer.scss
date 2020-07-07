@@ -1,0 +1,45 @@
+.main-footer {
+    background-color: $lightgray;
+    height: 30vh;
+}
+
+.find-us {
+    text-align: center;
+    margin: 20px;
+    padding-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.soclink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border: 2px solid $yellow;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    font-size: 2.5em;
+    margin: 10px;
+    transition: .3s;
+}
+
+.soclink:hover {
+    background-color: $blue;
+    border: none;
+}
+
+.soclink i {
+    color: $yellow;
+}
+
+.copyright h5 {
+    margin-top: 20px;
+    text-align: center;
+}

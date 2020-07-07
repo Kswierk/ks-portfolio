@@ -1,0 +1,44 @@
+.stories-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.story {
+    padding: 1em;
+}
+
+.stories-header {
+    font-weight: $font-bold;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.dots {
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    margin-top: 2em;
+}
+
+.dot {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: $blue;
+}
+
+.active-dot {
+    box-shadow: 0 0 3px 4px $yellow;
+}
+
+.quotation-wrap {
+    width: 3em;
+    margin: 2em 0 2em 0;
+}
+
+.quotation-svg {
+    width: 100%;
+}
