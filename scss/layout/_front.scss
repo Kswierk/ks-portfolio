@@ -1,12 +1,7 @@
-<<<<<<< Updated upstream
-// .front-wrap {
-//     height: calc(100% - 75px);
-// }
-=======
 .front-wrap {
-    height: calc(100vh - 75px);
+    margin-top: 75px;
+    height: calc(100vh - 75px)
 }
->>>>>>> Stashed changes
 
 .front-img {
     display: block;
@@ -37,28 +32,4 @@
         padding: 1em;
         font-size: 1.4em;
     }
-<<<<<<< Updated upstream
-
-    button {
-        width: 50%;
-        padding: .8em;
-        margin-top: 2em;
-        align-self: center;
-        border: none;
-        border-radius: 10px;
-        font-size: 1.2em;
-        color: $lightgray;
-        background-color: $blue;
-        opacity: .9;
-        cursor: pointer;
-        transition: .3s;
-        text-transform: uppercase;
-
-        &:hover {
-            opacity: 1;
-            width: 55%
-        }
-    }
-=======
->>>>>>> Stashed changes
 }

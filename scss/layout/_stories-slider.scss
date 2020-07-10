@@ -1,0 +1,59 @@
+.stories-slider {
+    position: relative;
+    background-color: $lightgray;
+    height: 55vh;
+
+    .stories {
+        display: flex;
+        flex-direction: column;
+
+        .story-text {
+            text-align: center;
+            padding: 1em;
+        }
+
+        .story-author {
+            text-align: center;
+        }
+    }
+
+    .slider-buttons {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%);
+
+        .vertical-line {
+            display: block;
+            margin-top: 5px;
+            width: 2px;
+            height: 60px;
+            background-color: $yellow;
+        }
+
+        .slider-button {
+            border: solid $blue;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 1em;
+            margin: 1em;
+            cursor: pointer;
+        }
+
+        .disabled-btn {
+
+            opacity: 0.4;
+            cursor: default;
+            pointer-events: none;
+        }
+
+        .slider-button-prev {
+            transform: rotate(135deg)
+        }
+
+        .slider-button-next {
+            transform: rotate(-45deg)
+        }
+    }
+}

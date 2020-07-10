@@ -1,9 +1,13 @@
 .navbar {
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     background-color: $lightgray;
     height: 75px;
+    width: 101vw;
+    z-index: 2;
+    top: 0;
+    left: 0;
 }
 
 .navbar-links {
@@ -22,6 +26,7 @@
     justify-content: space-around;
     background-color: $lightgray;
     z-index: 1;
+    border-radius: 0 0 10px 0;
 }
 
 .navbar-links li {
@@ -33,7 +38,7 @@
     display: block;
     text-decoration: none;
     font-size: 1em;
-    padding: 1.3em 1.3em 1.3em 2em;
+    padding: 1em;
     color: $blue;
     transition: .3s;
     text-transform: uppercase;
@@ -68,7 +73,6 @@
     cursor: pointer;
 }
 
-.toggle-animation {}
 
 .bars {
     display: flex;
@@ -89,7 +93,7 @@
 .active {
     display: flex;
     flex-direction: column;
-    top: 75px;
+    top: 73px;
     left: -40px;
     transition: .5s;
 }
