@@ -1,13 +1,18 @@
-const btn = document.querySelector(".toggle-button");
-const navLinks = document.querySelector(".navbar-links");
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-btn.addEventListener('click', () => navLinks.classList.toggle("active"));
-
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
 // SLIDER
 
 const reviews = [{
         name: "Damian Cichy",
         text: "Mateusz to Profesjonalista na każdym szczeblu prowadzonego treningu.Zajęcia grupowe w jego wydaniu, na Szkoleniu Kamili Rowińskiej, to zastrzyk mega pozytywnej energii i poprawa kondycji fizycznej. Mateusz to Specjalista pierwszej klasy w prowadzeniu indywidualnym; fachowa pomoc w zakresie badań, diety i ćwiczeń oraz fantastyczna motywacja."
+    },
+    {
+        name: "Rafał Andrzej",
+        text: "„Treningi z Mateuszem są jak musztra w wojsku. Każda minuta w 1 godzinie jest wykorzystana w 100%. Dzięki temu mogłam stwierdzić ile litrów wody jest w ludzkim ciele, ile skrajnych emocji kłębi się w głowie oraz ile słowny na kondycję psychiczną i fizyczną, na podstawie których układa trening i dostosowuje wysiłek do możliwości klienta. Jak dla mnie to facet na 6 z plusem!”"
     },
     {
         name: "Andrzej Duda",

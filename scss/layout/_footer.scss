@@ -1,6 +1,6 @@
 .main-footer {
     background-color: $lightgray;
-    height: 30vh;
+    margin-top: 2em;
 }
 
 .find-us {
@@ -22,7 +22,6 @@
     align-items: center;
     position: relative;
     list-style: none;
-    border: 2px solid $blue;
     background-color: $blue;
     border-radius: 50%;
     height: 60px;
@@ -51,4 +50,19 @@
 
 .copyright img {
     width: 1em;
+}
+
+@media(min-width: 550px) {
+    .soclink {
+        margin: .6em;
+        padding: 1em;
+    }
+
+    .soclink img {
+        width: 1.1em;
+    }
+
+    .find-us {
+        font-size: 1.5em;
+    }
 }
