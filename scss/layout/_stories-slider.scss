@@ -1,7 +1,7 @@
 .stories-slider {
     position: relative;
     background-color: $lightgray;
-    height: 55vh;
+    height: 75vh;
 
     .stories {
         display: flex;
@@ -10,10 +10,13 @@
         .story-text {
             text-align: center;
             padding: 1em;
+            font-size: 1.1em;
+            margin: 0 auto;
         }
 
         .story-author {
             text-align: center;
+            color: $blue;
         }
     }
 
@@ -55,5 +58,37 @@
         .slider-button-next {
             transform: rotate(-45deg)
         }
+    }
+}
+
+@media(min-width: 550px) {
+    .stories-slider {
+        height: 40vh;
+    }
+
+    .story-text {
+        font-size: 1.1em;
+        width: 80vw;
+    }
+}
+
+@media(min-width: 1200px) {
+    .stories-slider {
+        height: 40vh;
+    }
+
+    .story-text {
+        width: 60vw;
+        font-size: 1.3em;
+    }
+}
+
+@media(min-width:1700px) {
+    .stories-slider {
+        height: 35vh;
+    }
+
+    .story-author {
+        font-size: 1.7em;
     }
 }

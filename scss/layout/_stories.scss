@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 2em;
+    background-color: $lightgray;
 }
 
 .story {
@@ -10,23 +11,36 @@
 }
 
 .stories-header {
-    font-weight: $font-bold;
-    font-size: 2em;
+    margin: 1em auto;
+    font-size: 2.2em;
     text-transform: uppercase;
 }
 
-.dots {
-    display: flex;
-    justify-content: space-between;
-    width: 25vw;
-    margin-top: 2em;
-}
 
 .quotation-wrap {
     width: 3em;
-    margin: 2em 0 2em 0;
 }
 
 .quotation-svg {
     width: 100%;
+}
+
+@media(min-width: 550px) {
+    .stories-header {
+        font-size: 3em;
+    }
+
+    .quotation-wrap {
+        width: 4em;
+    }
+}
+
+@media(min-width: 1200px) {
+    .stories-header {
+        font-size: 4em;
+    }
+
+    .quotation-wrap {
+        width: 6em;
+    }
 }

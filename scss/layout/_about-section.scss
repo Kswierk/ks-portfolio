@@ -1,31 +1,60 @@
 .about-txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3em;
 
-    .about-h1 {
-        border-bottom: 2px solid $blue;
-        padding: .3em;
+    width: 100%;
+
+    h1 {
+        margin: 2em auto;
+        text-align: center;
+        font-size: 1.7em;
+
+        .horizontal-line {
+            display: block;
+            margin: 0 auto;
+            width: 5em;
+            height: 2px;
+            background-color: $blue;
+        }
     }
 
-    .about-p {
-        padding: 1em;
-        width: 100%;
+    .about-flex {
+        display: flex;
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+
+        .about-img-wrap {
+            height: 60vh;
+            width: 80%;
+            background: url(/img/kacperbcg.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .about-face-img {
+
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        p {
+            padding: 1em;
+            width: 90%;
+        }
     }
 }
 
-.about-img-wrap {
-    display: block;
-    width: 40vw;
-    height: 40vw;
-    border-radius: 50%;
-    margin: 4em;
 
-    .about-face-img {
-        display: block;
-        width: 100%;
-        overflow: hidden;
-        border-radius: 50%;
+@media(max-width:1200px) {
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .about-txt {
+        h1 {
+            font-size: 1.4em;
+        }
     }
 }
