@@ -313,6 +313,8 @@
 .soclink img {
   width: 0.9em;
   position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -394,7 +396,7 @@
 
 @media (min-width: 550px) {
   .stories-slider {
-    height: 60vh;
+    height: 70vh;
   }
 
   .story-text {
@@ -402,9 +404,14 @@
     width: 80vw;
   }
 }
+@media (min-width: 850px) {
+  .stories-slider {
+    height: 60vh;
+  }
+}
 @media (min-width: 1200px) {
   .stories-slider {
-    height: 45vh;
+    height: 48vh;
   }
 
   .story-text {
@@ -415,6 +422,11 @@
 @media (min-width: 1700px) {
   .stories-slider {
     height: 40vh;
+  }
+
+  .story-text {
+    width: 50vw;
+    font-size: 1.8em;
   }
 
   .story-author {
