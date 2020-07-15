@@ -3,16 +3,17 @@
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: $lightgray;
+    background-color: $blue;
     z-index: 1;
 }
 
 .brand-title {
     font-size: 1.5rem;
-    margin-top: .4rem;
+    margin-top: .7rem;
     width: 10em;
 
     img {
+        margin: auto 2em;
         width: 100%;
     }
 }
@@ -23,7 +24,7 @@
 
 .navbar-links ul {
     display: flex;
-    margin: 0;
+    margin: auto 2em;
     padding: 0;
 }
 
@@ -32,19 +33,19 @@
     transition: .3s;
 
     &:hover {
-        background-color: $blue;
+        background-color: $lightgray;
 
     }
 
     a {
         display: block;
         text-decoration: none;
-        color: $blue;
+        color: $lightgray;
         padding: 1.6rem;
         font-size: 1.2em;
 
         &:hover {
-            color: $lightgray;
+            color: $blue;
         }
     }
 }
@@ -89,6 +90,7 @@
 
             li {
                 text-align: center;
+
 
                 a {
                     padding: .5rem 1rem;

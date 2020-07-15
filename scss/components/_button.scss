@@ -19,3 +19,14 @@
         width: 55%
     }
 }
+
+a {
+
+    width: 100%;
+
+    .standard-btn {
+        &:hover {
+            width: 55%;
+        }
+    }
+}

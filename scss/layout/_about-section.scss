@@ -5,7 +5,7 @@
     h1 {
         margin: 2em auto;
         text-align: center;
-        font-size: 1.7em;
+        font-size: 1.9em;
 
         .horizontal-line {
             display: block;
@@ -18,12 +18,12 @@
 
     .about-flex {
         display: flex;
-        // flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 2em;
 
         .about-img-wrap {
+            margin: 2em auto;
             height: 60vh;
             width: 80%;
             background: url(/img/kacperbcg.jpg);
@@ -39,6 +39,8 @@
         }
 
         p {
+            font-size: 1.1em;
+            text-align: center;
             padding: 1em;
             width: 90%;
         }

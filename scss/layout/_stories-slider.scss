@@ -1,7 +1,7 @@
 .stories-slider {
     position: relative;
     background-color: $lightgray;
-    height: 75vh;
+    height: 77vh;
 
     .stories {
         display: flex;
@@ -63,7 +63,7 @@
 
 @media(min-width: 550px) {
     .stories-slider {
-        height: 40vh;
+        height: 60vh;
     }
 
     .story-text {
@@ -74,7 +74,7 @@
 
 @media(min-width: 1200px) {
     .stories-slider {
-        height: 40vh;
+        height: 45vh;
     }
 
     .story-text {
@@ -85,7 +85,7 @@
 
 @media(min-width:1700px) {
     .stories-slider {
-        height: 35vh;
+        height: 40vh;
     }
 
     .story-author {

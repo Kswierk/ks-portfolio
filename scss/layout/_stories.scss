@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 4em;
     background-color: $lightgray;
 }
 
@@ -12,7 +12,7 @@
 
 .stories-header {
     margin: 1em auto;
-    font-size: 2.2em;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -27,20 +27,20 @@
 
 @media(min-width: 550px) {
     .stories-header {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .quotation-wrap {
-        width: 4em;
+        width: 2.5em;
     }
 }
 
 @media(min-width: 1200px) {
     .stories-header {
-        font-size: 4em;
+        font-size: 3.3em;
     }
 
     .quotation-wrap {
-        width: 6em;
+        width: 3.3em;
     }
 }
