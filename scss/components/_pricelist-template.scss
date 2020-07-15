@@ -1,0 +1,60 @@
+.pricelist-template {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid $blue;
+    width: 70vw;
+    margin: 1em auto;
+
+    div {
+        margin: 1em auto;
+    }
+
+    .pricelist-header {
+        font-size: 1.7em;
+        text-transform: uppercase;
+    }
+
+    .price-tag {
+        color: $blue;
+        font-size: 2em;
+    }
+
+    .blue-horizontal-line {
+        display: block;
+        width: 50%;
+        height: 1px;
+        background-color: $yellow;
+    }
+
+    .training-duration {
+        color: gray;
+    }
+
+    .book-workout {
+        margin: 1em auto;
+    }
+}
+
+
+@media(min-width:900px) {
+    .workout-flex {
+        display: flex;
+        justify-content: space-around;
+
+        .pricelist-template {
+            width: 32vw;
+            min-height: 60vh;
+        }
+    }
+
+    .workout-flex-two {
+        display: flex;
+        justify-content: space-around;
+
+        .pricelist-template {
+            width: 28vw;
+        }
+
+    }
+}

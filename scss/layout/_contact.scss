@@ -1,0 +1,71 @@
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em auto;
+
+    .contact-h1 {
+        font-size: 3em;
+    }
+
+    .contact-h3 {
+        margin: 1em auto;
+        text-align: center;
+    }
+}
+
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .contact-form {
+        width: 100%;
+
+        div input {
+            width: 60vw;
+            margin: .5em auto;
+            height: 3em;
+            font-size: 1em;
+        }
+
+        textarea {
+            resize: none;
+            width: 60vw;
+            font-size: 1em;
+        }
+    }
+
+    .contact-details {
+        margin: 4em auto;
+        font-size: 1.3em;
+    }
+}
+
+
+@media(min-width: 800px) {
+    .contact-main {
+        width: 100%;
+        flex-direction: row;
+
+        .contact-form {
+
+            div input {
+                width: 40vw
+            }
+
+            textarea {
+                width: 40vw;
+            }
+        }
+
+        .contact-details {
+            width: 60vw;
+            font-size: 1.5em;
+            margin: auto 4em;
+            padding-bottom: 4em;
+        }
+
+    }
+}

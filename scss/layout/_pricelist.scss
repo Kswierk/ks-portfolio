@@ -1,0 +1,62 @@
+.personal-workouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2em auto;
+
+    .personal-workouts-header {
+        font-weight: $font-normal;
+        font-size: 2.4em;
+    }
+
+    .about-workouts {
+        margin: 1em .5em;
+
+        .about-workouts-bold {
+            font-weight: $font-bold;
+            font-size: 1.2em;
+            margin: 1.5em auto;
+        }
+    }
+}
+
+.single-workouts {
+    text-align: center;
+}
+
+.workout-type {
+    font-size: 2.2em;
+    font-weight: $font-normal-bold;
+    margin: 1em auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media(min-width: 550px) {
+
+    .about-workouts {
+        width: 70vw;
+    }
+}
+
+@media(min-width:1200px) {
+
+    .about-workouts {
+        width: 50vw;
+
+        .about-workouts-bold {
+            font-size: 1.4em;
+        }
+    }
+
+    .workout-type {
+        font-size: 2.4em;
+    }
+
+    .personal-workouts {
+        .personal-workouts-header {
+            font-size: 3.4em;
+        }
+    }
+}

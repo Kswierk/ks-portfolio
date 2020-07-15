@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;700&display=swap");
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  line-height: 1.8em;
 }
 
 .navbar {
@@ -12,16 +13,17 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #E0E5E9;
+  background-color: #0A62D0;
   z-index: 1;
 }
 
 .brand-title {
   font-size: 1.5rem;
-  margin-top: 0.4rem;
+  margin-top: 0.7rem;
   width: 10em;
 }
 .brand-title img {
+  margin: auto 2em;
   width: 100%;
 }
 
@@ -31,7 +33,7 @@
 
 .navbar-links ul {
   display: flex;
-  margin: 0;
+  margin: auto 2em;
   padding: 0;
 }
 
@@ -40,17 +42,17 @@
   transition: 0.3s;
 }
 .navbar-links li:hover {
-  background-color: #0A62D0;
+  background-color: #E0E5E9;
 }
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: #0A62D0;
+  color: #E0E5E9;
   padding: 1.6rem;
   font-size: 1.2em;
 }
 .navbar-links li a:hover {
-  color: #E0E5E9;
+  color: #0A62D0;
 }
 
 .toggle-button {
@@ -154,7 +156,7 @@
 .about-txt h1 {
   margin: 2em auto;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.9em;
 }
 .about-txt h1 .horizontal-line {
   display: block;
@@ -170,6 +172,7 @@
   padding: 2em;
 }
 .about-txt .about-flex .about-img-wrap {
+  margin: 2em auto;
   height: 60vh;
   width: 80%;
   background: url(/img/kacperbcg.jpg);
@@ -182,6 +185,8 @@
   height: 100%;
 }
 .about-txt .about-flex p {
+  font-size: 1.1em;
+  text-align: center;
   padding: 1em;
   width: 90%;
 }
@@ -214,6 +219,9 @@
   justify-content: center;
   color: #E0E5E9;
 }
+.how-flex h1 {
+  font-size: 1.8em;
+}
 
 .how-header {
   font-size: 2em;
@@ -224,7 +232,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 4em;
   background-color: #E0E5E9;
 }
 
@@ -234,7 +242,7 @@
 
 .stories-header {
   margin: 1em auto;
-  font-size: 2.2em;
+  font-size: 1.5em;
   text-transform: uppercase;
 }
 
@@ -248,25 +256,25 @@
 
 @media (min-width: 550px) {
   .stories-header {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .quotation-wrap {
-    width: 4em;
+    width: 2.5em;
   }
 }
 @media (min-width: 1200px) {
   .stories-header {
-    font-size: 4em;
+    font-size: 3.3em;
   }
 
   .quotation-wrap {
-    width: 6em;
+    width: 3.3em;
   }
 }
 .main-footer {
   background-color: #E0E5E9;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 .find-us {
@@ -334,7 +342,7 @@
 .stories-slider {
   position: relative;
   background-color: #E0E5E9;
-  height: 75vh;
+  height: 77vh;
 }
 .stories-slider .stories {
   display: flex;
@@ -386,7 +394,7 @@
 
 @media (min-width: 550px) {
   .stories-slider {
-    height: 40vh;
+    height: 60vh;
   }
 
   .story-text {
@@ -396,7 +404,7 @@
 }
 @media (min-width: 1200px) {
   .stories-slider {
-    height: 40vh;
+    height: 45vh;
   }
 
   .story-text {
@@ -406,11 +414,121 @@
 }
 @media (min-width: 1700px) {
   .stories-slider {
-    height: 35vh;
+    height: 40vh;
   }
 
   .story-author {
     font-size: 1.7em;
+  }
+}
+.personal-workouts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2em auto;
+}
+.personal-workouts .personal-workouts-header {
+  font-weight: 400;
+  font-size: 2.4em;
+}
+.personal-workouts .about-workouts {
+  margin: 1em 0.5em;
+}
+.personal-workouts .about-workouts .about-workouts-bold {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 1.5em auto;
+}
+
+.single-workouts {
+  text-align: center;
+}
+
+.workout-type {
+  font-size: 2.2em;
+  font-weight: 500;
+  margin: 1em auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  .about-workouts {
+    width: 70vw;
+  }
+}
+@media (min-width: 1200px) {
+  .about-workouts {
+    width: 50vw;
+  }
+  .about-workouts .about-workouts-bold {
+    font-size: 1.4em;
+  }
+
+  .workout-type {
+    font-size: 2.4em;
+  }
+
+  .personal-workouts .personal-workouts-header {
+    font-size: 3.4em;
+  }
+}
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4em auto;
+}
+.contact-header .contact-h1 {
+  font-size: 3em;
+}
+.contact-header .contact-h3 {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.contact-main .contact-form {
+  width: 100%;
+}
+.contact-main .contact-form div input {
+  width: 60vw;
+  margin: 0.5em auto;
+  height: 3em;
+  font-size: 1em;
+}
+.contact-main .contact-form textarea {
+  resize: none;
+  width: 60vw;
+  font-size: 1em;
+}
+.contact-main .contact-details {
+  margin: 4em auto;
+  font-size: 1.3em;
+}
+
+@media (min-width: 800px) {
+  .contact-main {
+    width: 100%;
+    flex-direction: row;
+  }
+  .contact-main .contact-form div input {
+    width: 40vw;
+  }
+  .contact-main .contact-form textarea {
+    width: 40vw;
+  }
+  .contact-main .contact-details {
+    width: 60vw;
+    font-size: 1.5em;
+    margin: auto 4em;
+    padding-bottom: 4em;
   }
 }
 .standard-btn {
@@ -432,4 +550,62 @@
 .standard-btn:hover {
   opacity: 1;
   width: 55%;
+}
+
+a {
+  width: 100%;
+}
+a .standard-btn:hover {
+  width: 55%;
+}
+
+.pricelist-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #0A62D0;
+  width: 70vw;
+  margin: 1em auto;
+}
+.pricelist-template div {
+  margin: 1em auto;
+}
+.pricelist-template .pricelist-header {
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+.pricelist-template .price-tag {
+  color: #0A62D0;
+  font-size: 2em;
+}
+.pricelist-template .blue-horizontal-line {
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: #F3D849;
+}
+.pricelist-template .training-duration {
+  color: gray;
+}
+.pricelist-template .book-workout {
+  margin: 1em auto;
+}
+
+@media (min-width: 900px) {
+  .workout-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  .workout-flex .pricelist-template {
+    width: 32vw;
+    min-height: 60vh;
+  }
+
+  .workout-flex-two {
+    display: flex;
+    justify-content: space-around;
+  }
+  .workout-flex-two .pricelist-template {
+    width: 28vw;
+  }
 }
