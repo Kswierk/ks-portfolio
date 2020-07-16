@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  line-height: 1.8em;
+  line-height: 1.9em;
 }
 
 .navbar {
@@ -527,6 +527,39 @@
     padding-bottom: 4em;
   }
 }
+.about-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+.about-main .about-photo {
+  height: 100vh;
+  background: url(/img/kacperbcg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-main .about-me-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 1em;
+  text-align: center;
+}
+.about-main .about-me-text .about-txt-header {
+  margin: 2em auto;
+  font-size: 2em;
+}
+.about-main .about-me-text .about-txt-header .horizontal-line {
+  display: block;
+  margin: 0 auto;
+  width: 5em;
+  height: 2px;
+  background-color: #0A62D0;
+}
+
 .standard-btn {
   width: 50%;
   max-width: 300px;
