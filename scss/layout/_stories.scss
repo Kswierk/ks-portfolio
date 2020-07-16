@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
     margin-top: 4em;
-    background-color: $lightgray;
 }
 
 .story {
@@ -12,7 +11,7 @@
 
 .stories-header {
     margin: 1em auto;
-    font-size: 1.5em;
+    font-size: 1.7em;
     text-transform: uppercase;
 }
 
@@ -37,7 +36,7 @@
 
 @media(min-width: 1200px) {
     .stories-header {
-        font-size: 3.3em;
+        font-size: 3em;
     }
 
     .quotation-wrap {

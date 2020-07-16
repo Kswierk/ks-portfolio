@@ -41,7 +41,7 @@
         display: block;
         text-decoration: none;
         color: $lightgray;
-        padding: 1.6rem;
+        padding: 1.8rem;
         font-size: 1.2em;
 
         &:hover {
@@ -64,7 +64,7 @@
     .bar {
         height: 3px;
         width: 100%;
-        background-color: $blue;
+        background-color: $lightgray;
         border-radius: 10px;
     }
 }
