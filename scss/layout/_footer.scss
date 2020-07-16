@@ -1,12 +1,12 @@
 .main-footer {
-    background-color: $lightgray;
     margin-top: 4em;
+    background-color: $blue;
 }
 
 .find-us {
     text-align: center;
-    margin: 20px;
     padding-top: 20px;
+    color: $lightgray;
 }
 
 .social-links {
@@ -22,7 +22,7 @@
     align-items: center;
     position: relative;
     list-style: none;
-    background-color: $blue;
+    background-color: $lightgray;
     border-radius: 50%;
     height: 60px;
     width: 60px;
@@ -55,16 +55,13 @@
 }
 
 @media(min-width: 550px) {
-    .soclink {
-        margin: .6em;
-        padding: 1em;
-    }
+    // .soclink {
+    //     margin: .6em;
+    //     padding: 1em;
+    // }
 
-    .soclink img {
-        width: 1.1em;
-    }
 
-    .find-us {
-        font-size: 1.5em;
-    }
+    // .find-us {
+    //     font-size: 1.3em;
+    // }
 }

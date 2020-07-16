@@ -48,7 +48,7 @@
   display: block;
   text-decoration: none;
   color: #E0E5E9;
-  padding: 1.6rem;
+  padding: 1.8rem;
   font-size: 1.2em;
 }
 .navbar-links li a:hover {
@@ -69,7 +69,7 @@
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #0A62D0;
+  background-color: #E0E5E9;
   border-radius: 10px;
 }
 
@@ -233,7 +233,6 @@
   flex-direction: column;
   align-items: center;
   margin-top: 4em;
-  background-color: #E0E5E9;
 }
 
 .story {
@@ -242,7 +241,7 @@
 
 .stories-header {
   margin: 1em auto;
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-transform: uppercase;
 }
 
@@ -265,7 +264,7 @@
 }
 @media (min-width: 1200px) {
   .stories-header {
-    font-size: 3.3em;
+    font-size: 3em;
   }
 
   .quotation-wrap {
@@ -273,14 +272,14 @@
   }
 }
 .main-footer {
-  background-color: #E0E5E9;
   margin-top: 4em;
+  background-color: #0A62D0;
 }
 
 .find-us {
   text-align: center;
-  margin: 20px;
   padding-top: 20px;
+  color: #E0E5E9;
 }
 
 .social-links {
@@ -296,7 +295,7 @@
   align-items: center;
   position: relative;
   list-style: none;
-  background-color: #0A62D0;
+  background-color: #E0E5E9;
   border-radius: 50%;
   height: 60px;
   width: 60px;
@@ -327,23 +326,8 @@
   width: 1em;
 }
 
-@media (min-width: 550px) {
-  .soclink {
-    margin: 0.6em;
-    padding: 1em;
-  }
-
-  .soclink img {
-    width: 1.1em;
-  }
-
-  .find-us {
-    font-size: 1.5em;
-  }
-}
 .stories-slider {
   position: relative;
-  background-color: #E0E5E9;
   height: 77vh;
 }
 .stories-slider .stories {
