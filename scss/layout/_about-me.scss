@@ -1,0 +1,39 @@
+.about-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+
+    .about-photo {
+        height: 100vh;
+        background: url(/img/kacperbcg.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .about-me-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // height: 100vh;
+        // width: 45%;
+        margin: 4em 1em;
+        text-align: center;
+
+        .about-txt-header {
+            margin: 2em auto;
+            // font-weight: $font-normal-bold;
+            font-size: 2em;
+
+            .horizontal-line {
+                display: block;
+                margin: 0 auto;
+                width: 5em;
+                height: 2px;
+                background-color: $blue;
+            }
+        }
+    }
+}
