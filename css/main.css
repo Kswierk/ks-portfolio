@@ -10,100 +10,73 @@
 
 .navbar {
   display: flex;
-  position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  min-height: 8vh;
   background-color: #0A62D0;
-  z-index: 1;
 }
-
-.brand-title {
-  font-size: 1.5rem;
-  margin-top: 0.7rem;
-  width: 10em;
+.navbar .logo {
+  height: 70px;
 }
-.brand-title img {
-  margin: auto 2em;
-  width: 100%;
-}
-
-.navbar-links {
+.navbar .logo .logo__img {
   height: 100%;
 }
-
-.navbar-links ul {
+.navbar .navbar__list {
   display: flex;
-  margin: auto 2em;
-  padding: 0;
+  width: 50%;
+  justify-content: space-around;
 }
-
-.navbar-links li {
+.navbar .navbar__list .navbar__item {
   list-style: none;
-  transition: 0.3s;
 }
-.navbar-links li:hover {
-  background-color: #E0E5E9;
-}
-.navbar-links li a {
-  display: block;
+.navbar .navbar__list .navbar__item .navbar__link {
   text-decoration: none;
   color: #E0E5E9;
-  padding: 1.8rem;
-  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-size: 1.1em;
 }
-.navbar-links li a:hover {
-  color: #0A62D0;
-}
-
-.toggle-button {
-  position: absolute;
-  top: 2.4em;
-  right: 6%;
-  transform: translateY(-50%);
+.navbar .burger {
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
 }
-.toggle-button .bar {
+.navbar .burger .burger__line {
+  display: block;
+  width: 25px;
   height: 3px;
-  width: 100%;
+  margin: 5px;
   background-color: #E0E5E9;
-  border-radius: 10px;
 }
 
-@media (max-width: 1050px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .toggle-button {
+@media (max-width: 800px) {
+  .navbar .navbar__list {
     display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-  .navbar-links ul {
-    width: 100%;
     flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #0A62D0;
+    transform: translateX(100%);
   }
-  .navbar-links ul li {
-    text-align: center;
+  .navbar .navbar__list .navbar__item {
+    opacity: 0;
   }
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
+  .navbar .burger {
+    display: block;
+    cursor: pointer;
   }
+}
+.navbar__list--active {
+  transform: translateX(0%);
+}
 
-  .navbar-links.active {
-    display: flex;
+@media (max-width: 1200px) {
+  .navbar .navbar__list {
+    width: 70%;
   }
 }
 .front-wrap {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 70px);
   width: 100%;
   background: url(/img/kacperbcg.jpg);
   background-position: center center;
@@ -545,7 +518,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4em 1em;
+  margin: 4em;
   text-align: center;
 }
 .about-main .about-me-text .about-txt-header {
