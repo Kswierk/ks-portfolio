@@ -16,7 +16,7 @@
   background-color: #0A62D0;
 }
 .navbar .logo {
-  height: 70px;
+  height: 60px;
 }
 .navbar .logo .logo__img {
   height: 100%;
@@ -25,6 +25,7 @@
   display: flex;
   width: 50%;
   justify-content: space-around;
+  z-index: 2;
 }
 .navbar .navbar__list .navbar__item {
   list-style: none;
@@ -34,6 +35,10 @@
   color: #E0E5E9;
   letter-spacing: 2px;
   font-size: 1.1em;
+  transition: 0.3s;
+}
+.navbar .navbar__list .navbar__item .navbar__link:hover {
+  color: #F3D849;
 }
 .navbar .burger {
   display: none;
@@ -42,11 +47,19 @@
   display: block;
   width: 25px;
   height: 3px;
+  border-radius: 2px;
   margin: 5px;
   background-color: #E0E5E9;
 }
 
 @media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar .logo {
+    height: 60px;
+  }
   .navbar .navbar__list {
     display: flex;
     flex-direction: column;
@@ -57,6 +70,7 @@
     top: 8vh;
     background-color: #0A62D0;
     transform: translateX(100%);
+    transition: all 0.3s ease-in;
   }
   .navbar .navbar__list .navbar__item {
     opacity: 0;
@@ -65,18 +79,43 @@
     display: block;
     cursor: pointer;
   }
+  .navbar .burger .burger__line {
+    transition: all 0.3s ease;
+  }
 }
-.navbar__list--active {
+.navbar__list.navbar__list--active {
   transform: translateX(0%);
+}
+
+.toggle .burger__line--line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .burger__line--line2 {
+  opacity: 0;
+}
+
+.toggle .burger__line--line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media (max-width: 1200px) {
   .navbar .navbar__list {
-    width: 70%;
+    width: 100%;
+  }
+}
+@keyframes navlinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50px);
   }
 }
 .front-wrap {
-  height: calc(100vh - 70px);
+  height: calc(100vh - 60px);
   width: 100%;
   background: url(/img/kacperbcg.jpg);
   background-position: center center;
@@ -99,7 +138,7 @@
   justify-content: center;
   align-content: center;
   text-align: center;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90vw;
@@ -107,8 +146,7 @@
   color: #E0E5E9;
 }
 .front-txt h1 {
-  padding: 0.4em;
-  font-size: 2.5em;
+  font-size: 2.7em;
   letter-spacing: 0.4em;
   font-family: "Bebas Neue", cursive;
   color: #E0E5E9;
@@ -120,7 +158,7 @@
 
 @media (min-width: 1200px) {
   .front-txt h1 {
-    font-size: 3.5em;
+    font-size: 4em;
   }
 }
 .about-txt {
@@ -338,6 +376,7 @@
   padding: 1em;
   margin: 1em;
   cursor: pointer;
+  transition: 0.3s;
 }
 .stories-slider .slider-buttons .disabled-btn {
   opacity: 0.4;
@@ -507,7 +546,7 @@
   justify-content: space-between;
 }
 .about-main .about-photo {
-  height: 100vh;
+  height: calc(100vh - 60px);
   background: url(/img/kacperbcg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
