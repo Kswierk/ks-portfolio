@@ -10,22 +10,25 @@
 
 <body>
     <nav class="navbar">
-        <div class="brand-title">
-            <a href="index.html"><img src="/img/logo_kacper.JPG" alt="logo">
-        </div></a>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="index.html">Tutaj zacznij</a></li>
-                <li><a href="about-me.html">O mnie</a></li>
-                <li><a href="pricelist.html">Oferta</a></li>
-                <li><a href="#">Metamorfozy</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
-            </ul>
+        <div class="logo">
+            <a href="/index.html"><img class="logo__img" src="/img/logo_kacper.JPG" alt="logo"></a>
+        </div>
+        <ul class="navbar__list">
+            <li class="navbar__item">
+                <a class="navbar__link" href="index.html">Tutaj zacznij</a></li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="about-me.html">O mnie</a></li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="/pricelist.html">Oferta</a></li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="#">Metamorfozy</a></li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="contact.html">Kontakt</a></li>
+        </ul>
+        <div class="burger">
+            <div class="burger__line burger__line--line1"></div>
+            <div class="burger__line burger__line--line2"></div>
+            <div class="burger__line burger__line--line3"></div>
         </div>
     </nav>
 
@@ -34,9 +37,8 @@
             Trening personalny
         </header>
         <article class="about-workouts">
-            <p>Marzysz o tym, by zbudować sylwetkę, którą zawsze chciałeś osiągnąć ale nie wiedziałeś jak? Zmagasz
-                się z
-                wadami postawy, a chciałbyś w końcu osiągnąć pełną wyprostowaną postawę?</p>
+            <p>Marzysz o tym, by zbudować ciało, którą zawsze chciałeś osiągnąć ale nie wiedziałeś jak? Zmagasz się z
+                wadami postawy, a chciałbyś w końcu osiągnąć pełną wyprostowaną sylwetkę?</p>
             <p class="about-workouts-bold">Zapraszam cię do współpracy!
             </p>
         </article>
@@ -52,7 +54,7 @@
                 <div class="individual-plan"></div>
                 <div class="daily-contact">Pokazanie poprawnej techniki</div>
                 <div class="discount">Korekta wykonywanych błędów</div>
-                <button class="book-workout standard-btn">Rezerwuję</button>
+                <a href="/contact.html"><button class="book-workout standard-btn">Rezerwuję</button></a>
             </div>
         </section>
         <section class="single-workouts">
@@ -64,7 +66,7 @@
                 <div class="individual-plan"></div>
                 <div class="daily-contact">Pokazanie poprawnej techniki</div>
                 <div class="discount">Korekta wykonywanych błędów</div>
-                <button class="book-workout standard-btn">Rezerwuję</button>
+                <a href="/contact.html"><button class="book-workout standard-btn">Rezerwuję</button></a>
             </div>
         </section>
     </div>
@@ -79,7 +81,7 @@
                 <div class="individual-plan">Indywidualny plan treningowy </div>
                 <div class="daily-contact">Stały kontakt telefoniczny i mailowy</div>
                 <div class="discount">Oszczędzasz 180zł</div>
-                <button class="book-workout standard-btn">Rezerwuję</button>
+                <a href="/contact.html"><button class="book-workout standard-btn">Rezerwuję</button></a>
             </div>
         </section>
         <section class="single-workouts">
@@ -91,7 +93,7 @@
                 <div class="individual-plan">Indywidualny plan treningowy </div>
                 <div class="daily-contact">Stały kontakt telefoniczny i mailowy</div>
                 <div class="discount">Oszczędzasz 260zł</div>
-                <button class="book-workout standard-btn">Rezerwuję</button>
+                <a href="/contact.html"><button class="book-workout standard-btn">Rezerwuję</button></a>
             </div>
         </section>
         <section class="single-workouts">
@@ -103,7 +105,7 @@
                 <div class="individual-plan">Indywidualny plan treningowy </div>
                 <div class="daily-contact">Stały kontakt telefoniczny i mailowy</div>
                 <div class="discount">Oszczędzasz 380zł</div>
-                <button class="book-workout standard-btn">Rezerwuję</button>
+                <a href="/contact.html"><button class="book-workout standard-btn">Rezerwuję</button></a>
             </div>
         </section>
     </div>
@@ -117,7 +119,7 @@
             </ul>
         </div>
         <div class="copyright">
-            <h5>Wszystkie prawa zastrzeżone <img src="/img/copyright.svg" alt=""> 2020</h5>
+            <h5>Wszystkie prawa zastrzeżone <img src="/img/copyright.svg" alt="copyright"> 2020</h5>
         </div>
     </footer>
 
